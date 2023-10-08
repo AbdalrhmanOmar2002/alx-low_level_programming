@@ -17,6 +17,6 @@ for (; n <= 57; n++)
 {
 putchar(n);
 }
-putcher('/n');
+putchar('/n');
 return (0);
 }
