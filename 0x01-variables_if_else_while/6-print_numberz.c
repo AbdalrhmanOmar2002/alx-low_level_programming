@@ -12,11 +12,10 @@
 
 int main(void)
 {
-int n = 48;
-for (; n <= 57; n++)
+int n = 0;
+for (; n <= 9; n++)
 {
-putchar(n);
+putchar(n + '0');
 }
-putchar('/n');
 return (0);
 }
