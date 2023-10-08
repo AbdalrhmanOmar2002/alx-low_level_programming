@@ -12,11 +12,10 @@
 
 int main(void)
 {
-char n = '0';
-for (; n <= '9'; n++)
+int n = 49;
+for (; n <= 57; n++)
 {
 putchar(n);
-putchar(32);
 }
 return (0);
 }
