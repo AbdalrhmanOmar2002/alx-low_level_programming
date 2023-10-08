@@ -16,7 +16,6 @@ char n = '0';
 for (; n <= '9'; n++)
 {
 putchar(n);
-putchar(32);
 }
 return (0);
 }
