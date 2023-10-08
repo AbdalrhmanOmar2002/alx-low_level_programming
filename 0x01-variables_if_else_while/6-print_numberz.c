@@ -17,5 +17,6 @@ for (; n <= 9; n++)
 {
 putchar(n + '0');
 }
+putchar(0);
 return (0);
 }
