@@ -12,10 +12,11 @@
 
 int main(void)
 {
-int n = 49;
+int n = 48;
 for (; n <= 57; n++)
 {
 putchar(n);
 }
+putcher('/n');
 return (0);
 }
