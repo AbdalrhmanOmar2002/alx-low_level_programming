@@ -9,16 +9,19 @@
 
 int print_sign(int n)
 {
-if (n >= 1)
+if (n > 0)
 {
-return ("+");
+_putcher(43)
+return (1);
 }
 else if (n == 0)
 {
+_putcher(48)
 return (0);
 }
 else
 {
-return ("-");
+_putcher(45)
+return (-1);
 }
 }
