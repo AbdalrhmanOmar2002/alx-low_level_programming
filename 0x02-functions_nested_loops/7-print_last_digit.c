@@ -14,7 +14,8 @@ int i;
 if (n < 0)
 {
 i = -1 * (n % 10);
-}else
+}
+else
 {
 i = n % 10;
 }
