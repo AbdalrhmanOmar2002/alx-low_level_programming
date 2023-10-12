@@ -19,7 +19,7 @@ else
 {
 for (dia = 1; dia <= n; dia++)
 {
-for (space = 1; space <= dia; space++)
+for (space = 1; space <= dia - 1; space++)
 _putchar(' ');
 _putchar(92); /** is equal to '/' char*/
 _putchar('\n');
