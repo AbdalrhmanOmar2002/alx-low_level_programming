@@ -1,5 +1,5 @@
 #include "main.h"
-OBOBOB
+
 /**
  * print_square - prints a square, followed by a new line..
  *
