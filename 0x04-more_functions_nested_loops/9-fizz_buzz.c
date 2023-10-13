@@ -1,11 +1,14 @@
 #include <stdio.h>
 
 /**
- * main - The “Fizz-Buzz test” is an interview question
+ * main - Entry point for the FizzBuzz program
  *
- * Return : Always O (Success)
+ * This program prints numbers from 1 to 100, replacing
+ * multiples of 3 with "Fizz," multiples of 5 with "Buzz,"
+ * and multiples of both 3 and 5 with "FizzBuzz."
+ *
+ * Return: Always 0 (Success)
  */
-
 int main(void)
 {
 int i;
