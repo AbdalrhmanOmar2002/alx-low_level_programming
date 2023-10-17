@@ -13,17 +13,8 @@ void puts2(char *str)
 int num, i;
 for (num = 0; str[num] != '\0'; num++)
 {
-;
-}
-for (i = 0; i < num; i++)
-{
-if (str[i] % 2 != 0)
-{
-;
-}
-else
-{
+if (i % 2 == 0)
 _putchar(str[i]);
 }
-}
+_putchar('\n');
 }
