@@ -11,41 +11,20 @@
 
 int _strcmp(char *s1, char *s2)
 {
-int i;
-int one = 0;
-int two = 0;
-int compares = 110;
-while (s1[one])
-{
-one++;
-}
-while (s2[two])
-{
-two++;
-}
+int compares = 0;
+/* printf("\n%s\n", s1);*/
+/*printf("%d\n", *s1);*/
+/*printf("%d\n", *s2);*/
 
-if (one < two)
+while (*s1)
 {
-compares = -15;
-}
-else if (one > two)
+if (*s1 != *s2)
 {
-compares = 15;
+compares = ((int)*s1 - 48) - ((int)*s2 - 48);
+break;
 }
-else if (one == two)
-{
-for (i = 0; s1[i] != '\0'; i++)
-{
-if (s1[i] == s2[i])
-{
-compares = 0;
+s1++;
+s2++;
 }
-else
-{
-compares = 15;
-}
-}
-}
-
 return (compares);
 }
