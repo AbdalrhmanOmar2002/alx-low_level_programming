@@ -8,27 +8,44 @@
  * Return: Nothing
  */
 
-char *cap_string(char *str)
+int isLower(char c)
+{
+return (c >= 97 && c <= 122);
+}
+int isDelimiter(char c)
 {
 int i;
-for (i = 0; str[i] != '\0'; i++)
+char delimiter[] = " \t\n,.0!?\"(){}";
+for (i = 0; i < 12; i++)
 {
+if (c == delimiter[i])
+{
+return (1);
+}
+}
+return (0);
+}
 
-if (str[i] == 32 || str[i] == '\n' || str[i] == '.')
+char *cap_string(char *s)
 {
-i++;
-if (str[i] >= 97 && str[i] <= 122)
+char *ptr = s;
+int found = 1;
+while (*s)
 {
-str[i] = str[i] - 32;
-}
-}
-
-if (str[i] == '\t')
+if (isDelimiter(*s))
 {
-str[i] = 32;
-i++;
-str[i] = str[i] - 32;
+found = 1;
 }
+else if (isLower(*s) && found)
+{
+*s -= 32;
+found = 0;
 }
-return (str);
+else
+{
+found = 0;
+}
+s++;
+}
+return (ptr);
 }
