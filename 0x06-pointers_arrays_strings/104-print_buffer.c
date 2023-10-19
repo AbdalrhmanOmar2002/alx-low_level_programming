@@ -33,7 +33,7 @@ printf("%02x", *(b + start + i));
 }
 else
 {
-printf("");
+printf("  ");
 }
 if (i % 2)
 {
