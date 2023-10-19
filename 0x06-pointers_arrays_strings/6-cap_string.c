@@ -1,17 +1,25 @@
 #include "main.h"
 
 /**
- * cap_string - capitalizes all words of a string.
+ * isLower - determines whether ascii is lowercase .
  *
- * @str: char pointer
+ * @c: char
  *
- * Return: Nothing
+ * Return: 1 if true, 0 if false
  */
 
 int isLower(char c)
 {
 return (c >= 97 && c <= 122);
 }
+
+/**
+ * isDelimiter - determines whether ascii is a Delimiter.
+ *
+ * @c: char
+ *
+ * Return: 1 if true, 0 if false
+ */
 int isDelimiter(char c)
 {
 int i;
@@ -25,7 +33,13 @@ return (1);
 }
 return (0);
 }
-
+/**
+ * cap_string - capitalizes all words of a string.
+ *
+ * @s: char pointer
+ *
+ * Return: Nothing
+ */
 char *cap_string(char *s)
 {
 char *ptr = s;
