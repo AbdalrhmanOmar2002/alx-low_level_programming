@@ -93,34 +93,50 @@
 
 */
 
-int *sum(int a[3], int b[3]);
-int main(void)
-{
-  int a[3] = {3, 5, 8};
-  int b[3] = {6, 7, 2};
-  int *c;
+// int *sum(int a[3], int b[3]);
+// int main(void)
+// {
+//   int a[3] = {3, 5, 8};
+//   int b[3] = {6, 7, 2};
+//   int *c;
 
-  c = sum(a, b);
-  for (int i = 0; i < 3; i++)
-  {
-    printf("%d\n", *c++);
-  }
-}
-int *sum(int a[3], int b[3])
-{
-  int i;
-  static int c[3];
-  for (i = 0; i < 3; i++)
-  {
-    c[i] = a[i] + b[i];
-  }
-  return (c);
-}
+//   c = sum(a, b);
+//   for (int i = 0; i < 3; i++)
+//   {
+//     printf("%d\n", *c++);
+//   }
+// }
+// int *sum(int a[3], int b[3])
+// {
+//   int i;
+//   static int c[3];
+//   for (i = 0; i < 3; i++)
+//   {
+//     c[i] = a[i] + b[i];
+//   }
+//   return (c);
+// }
 
 /*
 ! 4. Manipulate arrays more easily by moving pointers them (or to parts of
 ! them),instead of moving the arrays themselves
 */
+
+int main(void)
+{
+  int a[6] = {3, 5, 6, 10, 15, 60};
+
+  for (int i = 0; i < 6; i++)
+  {
+    printf("%d\n", a[i]);
+  }
+  printf("------------------\n");
+
+  for (int i = 0; i < 6; i++)
+  {
+    printf("%d\n", *(a + i));
+  }
+}
 
 /*
 ! 5. Create complex data structures, such as linked lists and binary trees,
