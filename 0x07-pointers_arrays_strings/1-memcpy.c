@@ -6,16 +6,14 @@
  * @src: char pointer
  * @n: unsigned int
  *
- * Return: Nothing.
+ * Return: A pointer to the destination string `dest`.
  */
 char *_memcpy(char *dest, char *src, unsigned int n)
 {
-int i;
-int num = n;
-for (i = 0; i < num; i++)
+for (unsigned int i = 0; i < n; i++)
 {
-src[i] = dest[i];
+dest[i] = src[i];
 }
-return (dest);
 
+return dest;
 }
