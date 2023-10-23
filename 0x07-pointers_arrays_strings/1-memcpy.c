@@ -6,8 +6,9 @@
  * @src: char pointer
  * @n: unsigned int
  *
- * Return: Nothing.
+ * Return: dest pointer.
  */
+
 char *_memcpy(char *dest, char *src, unsigned int n)
 {
 int i;
