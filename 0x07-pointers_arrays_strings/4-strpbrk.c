@@ -21,7 +21,5 @@ if (accept[g] == s[i])
 return (s + i);
 }
 }
-
 return ('\0');
-
 }
