@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * print_diagsums - prints the sum of the two diagonals
+ * set_string - sets the value of a pointer to a char.
  * of a square matrix of integers.
  * @s: pointer to pointer int
  * @to: pointer to char
