@@ -3,9 +3,6 @@
 
 int main()
 {
-  int *p;
-  printf("%d\n", sizeof(p));
-  printf("%d\n", sizeof(*p));
   const char *haystack = "This is a simple example";
   const char *needle = "simple";
 
