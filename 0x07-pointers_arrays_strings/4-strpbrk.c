@@ -18,8 +18,12 @@ for (i = 0; s[i] != '\0'; i++)
 for (g = 0; accept[g] != '\0'; g++)
 {
 if (accept[g] == s[i])
+{
 return (s + i);
 }
 }
+}
+
 return ('\0');
+
 }
