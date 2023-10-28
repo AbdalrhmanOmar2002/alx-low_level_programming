@@ -1,15 +1,17 @@
 #include "main.h"
 /**
- * _abs - prints the absolute value of a number
- *@i: number targeted
- *Return: returns 0
- */
-int _abs(int i)
+ * _abs - function that combutes the absolute
+ *		value  of an integer
+ *
+ * @n: takes in integer input for function
+ *
+ * Return: Always 0 (success)
+ *
+*/
+
+int _abs(int n)
 {
-if (i > 0)
-return (i);
-else if (i < 0)
-return (-i);
-else
-return (0);
+	if (n < 0)
+		n = (-1) * n;
+	return (n);
 }
