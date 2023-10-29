@@ -2,7 +2,8 @@
 
 /**
  * main - prints its name, followed by a new line.
- *
+ * @argc: int
+ * @argv: char
  * Return: Always 0.
  */
 
