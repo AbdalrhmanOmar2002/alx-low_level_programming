@@ -4,7 +4,7 @@
  * _strlen - find length of a string
  * @s: char
  *
- * Return: 0.
+ * Return: int.
  */
 
 char *_strlen(char *s)
@@ -32,6 +32,7 @@ char *m;
 
 if (s1 == NULL)
 s1 = "\n";
+
 if (s2 == NULL)
 s2 = "\n";
 
