@@ -16,7 +16,7 @@ return (size);
 }
 
 /**
- * str_concat -
+ * str_concat - concatenates two strings.
  * @s1: pointer to char
  * @s2: pointer to char
  *
