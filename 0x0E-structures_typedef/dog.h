@@ -2,19 +2,19 @@
 #define DOG_H
 
 /**
- * struct dog - Short description
- * @*name: First member
- * @*owner: Second member
+ * struct dog - a dog struct
+ * @name: First member
+ * @owner: Second member
  * @age: Third member
  *
- * Description: Longer description
+ * Description: just a lone dog struct in a big kitty world
  */
 
 struct dog
 {
-  char *name;
-  char *owner;
-  float age;
+char *name;
+char *owner;
+float age;
 };
 
 #endif
