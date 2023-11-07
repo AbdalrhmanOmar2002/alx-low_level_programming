@@ -22,7 +22,6 @@ return (len);
  *
  * @dest: pointer to destination input buffer
  * @src: pointer to source input buffer
- * @n: bytes of @src
  *
  * Return: @dest
  */
