@@ -5,7 +5,6 @@
  *
  * @d: the dog struct
  * @name: the dog's name
- * @float: the dog's float
  * @age: the dog's age
  * @owner: the dog's owner
  *
