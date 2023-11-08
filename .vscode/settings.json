@@ -3,6 +3,8 @@
   "files.associations": {
     "stdio.h": "c",
     "main.h": "c",
-    "stdlib.h": "c"
+    "stdlib.h": "c",
+    "function_pointers.h": "c",
+    "cstdio": "c"
   }
 }
