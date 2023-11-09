@@ -1,8 +1,7 @@
 #include "function_pointers.h"
 
 /**
- * array_iterator - executes a function given
- * as a parameter on each element of an array.
+ * int_index - searches for an integer.
  * @array: pointer to int
  * @size: size of the array
  * @cmp: pointer to the function to be used to compare values
