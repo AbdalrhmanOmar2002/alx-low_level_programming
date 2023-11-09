@@ -28,5 +28,5 @@ printf("Error\n"), exit(100);
 
 printf("%d\n", p_fun(a, b));
 
-return 0;
+return (0);
 }
