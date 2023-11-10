@@ -2,7 +2,7 @@
 #include <stdarg.h>
 
 /**
- * print_numbers - prints string, followed by a new line.
+ * print_strings - prints string, followed by a new line.
  * @n: number of separators
  * @separator: separator
  * Abdalrhman Omar
@@ -21,18 +21,12 @@ void print_strings(const char *separator, const unsigned int n, ...)
 		str = va_arg(arr, char *);
 		
 		if (str)
-		{
 			printf("%s", str);
-		}
 		else
-		{
 			printf("(nil)");
-		}
 
 		if (separator && i < (int)n - 1)
-		{
 			printf("%s", separator);
-		}
 	}
 	printf("\n");
 
