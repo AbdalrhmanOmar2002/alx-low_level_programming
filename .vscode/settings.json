@@ -5,6 +5,7 @@
     "main.h": "c",
     "stdlib.h": "c",
     "function_pointers.h": "c",
-    "cstdio": "c"
+    "cstdio": "c",
+    "variadic_functions.h": "c"
   }
 }
