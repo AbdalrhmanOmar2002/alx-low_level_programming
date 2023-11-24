@@ -10,21 +10,8 @@
 
 int get_bit(unsigned long int n, unsigned int index)
 {
-	int bit = sizeof(n) * 8;
-	char *arr = malloc(bit * sizeof(char));
-	int i = 0;
-
-	while (n > 0)
-	{
-		arr[i] = (n % 2 == 0) ? '0' : '1';
-		n = n / 2;
-		i++;
-	}
-
-	if (index >= bit)
-	{
+	if (index >= sizeof(n) * 8)
 		return (-1);
-	}
 
-	return (arr[index] - '0');
+	return (n >> index & 1);
 }
