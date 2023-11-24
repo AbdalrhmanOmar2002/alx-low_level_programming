@@ -21,5 +21,10 @@ int get_bit(unsigned long int n, unsigned int index)
 		i++;
 	}
 
+	if (index >= i)
+	{
+		return (-1);
+	}
+
 	return (arr[index] - '0');
 }
